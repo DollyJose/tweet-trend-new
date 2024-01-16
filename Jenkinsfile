@@ -18,7 +18,7 @@ environment {
         stage("test"){
           steps{
             echo "--------unit test started-----"
-            sh 'mvn surefire-repot:report'
+            sh 'mvn surefire-report:report'
             echo "--------unit test completed------"
           }
         }
