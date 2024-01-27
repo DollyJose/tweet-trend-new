@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dolie-rtp-service
+  namespace: dolie
+spec:
+  type: NodePort
+  selector:
+    app: dolie-rtp
+  ports:
+    - nodePort: 30082
+      port: 8000
+      targetPort: 8000
